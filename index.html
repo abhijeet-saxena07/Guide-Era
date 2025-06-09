@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideEra</title>
+    
+    <link rel="stylesheet" href="home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    
+    <script>
+        $(document).ready(function() {
+            $(window).on('scroll', function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                } else {
+                    $('nav').removeClass('black');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+	<div class="background-image"></div>
+	
+	
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav class="navbar">
+			<div class="logo">
+				<img src="./image/fffff.jpg" alt="logo">
+			</div>
+			<div>
+				<ul>
+					<li><a class="active" href="">Home</a></li>
+					
+					<li><a href="./contribution.html">Contribution</a></li>
+					<li><a href="./facilities.html">Facilities</a></li>
+					<li><a href="./portfolio'/index.html">Portfolio</a></li>
+				</ul>
+			</div>
+			<div>
+				<a class="get-started" href="upcoming-courses.html">Upcoming Courses</a>
+				<img src="./image/icon.jpg" class="menu" onclick="sideMenu(0)" alt="menu">
+			</div>
+			
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Education is the movement from darkness to light.</p>
+				<br><br>
+				<h3>Don't study because you need to.Study because knowledge is power.Study because they can never take it away from you.Study because it enhances you.Study because it grows you.</h5>
+				
+			</div>
+			<div class="svg-image">
+				<img src="./image/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+		<span>Entities of GuideEra</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center><div class="cbox">
+		<div class="det"><a href="classes.html"><img src="./image/book.png">Classes</a></div>
+		<div class="det"><a href="test.html"><img src="./image/d1.png">Monthly test</a></div>
+		<div class="det"><a href="classes.html"><img src="./image/paper.png">Study Material</a></div>
+		<div class="det"><a href="coun.html"><img src="./image/book.png">Career Counselling</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="./x/x.html"><img src="./image/computer.png">Government Schemes</a></div>
+		<div class="det"><a href="performance.html"><img src="./image/data.png">Performance & Rank</a></div>
+		<div class="det"><a href="facilities.html"><img src="./image/algo.png">Facilities</a></div>
+		<div class="det det-last"><a href="notice.html"><img src="./image/projects.png">Notice Board</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="./image/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Our basic agenda for this Problem is to implement a system that can overall take care of most of the issues that occurs in rural areas such as lack of Assessments,furthur future choices, counsellings, Class-Wise Study Material, Urban to Rural Connectivity . All the required important updates will be shared through the timeline, benfits , steps and ways to handle them. Overall our website will eventually work for the betterment of ducation in rural areas
+					</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;"></p></center>
+		<div class="content">
+			<p>
+				“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”
+			</p>
+		</div>
+	</div>
+	
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #d7da17, #0fa088); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Don't wait until you reach your goal to be proud of yourself.Be proud of every step you take.It is okay if it's taking more than you thought.”</div></marquee>
+
+
+
+</body>
+</html>

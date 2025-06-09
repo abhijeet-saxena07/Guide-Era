@@ -1,0 +1,109 @@
+/* Your CSS styles for this page can go here */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#C5F5F5;
+    color: #fff;
+    padding:  0;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    padding: 2px 10px;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+
+
+.section {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    /* Add background images */
+    background-image: url('./image/test-background1.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Apply different background images to each section */
+#tests {
+    background-image: url('./image/test-background1.jpg'); /* Replace with your image path */
+}
+
+#counseling {
+    background-image: url('./image/counseling-background.jpg'); /* Replace with your image path */
+}
+
+#schemes {
+    background-image: url('./image/government.jpeg'); /* Replace with your image path */
+}
+/* ... (previous CSS code) ... */
+
+#study-material {
+    background-image: url('./image/study-material-background.jpg'); /* Replace with your image path */
+}
+#Feedback {
+    background-image: url('./image/feedback.jpg'); /* Replace with your image path */
+}
+
+/* ... (continue with the rest of the CSS code) ... */
+
+
+.section h2 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.section p {
+    font-size: 18px;
+    color: #feffff;
+}
+
+.cta-button {
+    background-color: #C5F5F5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color:#C5F5F5;
+}
+
+footer {
+    background-color: #C5F5F5;
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+}

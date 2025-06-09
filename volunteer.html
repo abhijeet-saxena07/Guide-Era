@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution</title>
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+    
+    <header class="header">
+        <!-- Add this in the head section -->
+        <style>
+            #successMessage {
+                background-color: #4CAF50;
+                color: white;
+                padding: 20px;
+                border-radius: 5px;
+                margin: 20px auto;
+                max-width: 400px;
+                text-align: center;
+                font-size: 18px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            }
+        </style>
+        
+        <!-- Add home link in nav -->
+        <nav>
+            <div class="logo"><img src="./image/fffff.jpg" alt="GuideEra" height="90"></div>
+            <h1 class="text-with-outline"><b>GuideEra</b></h1>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="volunteer">
+            <h1 class="section-title">Submit Info to Volunteer</h1>
+            <form name="submit-to-google-sheet">
+                <label>Name:</label>
+                <input type="text" name="name">
+
+                <label>Email:</label>
+                <input type="email" name="email" >
+
+                <label for="message">Location:</label>
+                <textarea name="Address" name="Address"></textarea>
+
+                <label for="message">Your Qualifications:</label>
+                <textarea name="your qualification" name="your qualification"></textarea>
+
+                <label for="message">Why should we Choose you?:</label>
+                <textarea name="qualities" name="qualities"></textarea>
+
+                <input type="submit" name="submit">
+            </form>
+            <!-- Success message div (initially hidden) -->
+            <div id="successMessage" style="display: none;">Form submitted successfully!</div>
+        </section>
+    </main>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx6ylPPoPydo8dG00bEAS2Httgs25Qp7se_idgV0HT9xe3zH8CMsL47f5tdeQxc7vn-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const successMessage = document.getElementById('successMessage'); // Get the success message div
+
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              if (response.ok) {
+                // Show the success message and hide the form
+                form.style.display = 'none';
+                successMessage.style.display = 'block';
+              } else {
+                console.error('Error!', response);
+              }
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

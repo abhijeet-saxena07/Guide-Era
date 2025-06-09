@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <style>
+        
+        /* /* Reset some default styles for list items */
+         body, ul, li {
+             margin: 0;
+             padding: 0;
+             list-style: none;
+         }
+     
+         /* Global styles */
+         body {
+             font-family: Arial, sans-serif;
+             background-color:#c5f5f5;
+         }
+ 
+         header {
+            background-color: #c5f5f5;
+            color: #fff;
+            padding:  0;
+         }
+ 
+         nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+ 
+         .logo {
+            font-size: 24px;
+         }
+ 
+         .menu {
+           list-style: none;
+           display: flex;
+           gap: 20px;
+         }
+ 
+         .menu li a {
+           text-decoration: none;
+           color:white;
+         }
+     
+         .quiz-container {
+             max-width: 800px;
+             margin: 0 auto;
+             background-color: #fff;
+             padding: 20px;
+             border-radius: 5px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+     
+         h1, h2, h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+         }
+     
+         /* Question styles */
+         .question {
+             margin-bottom: 20px;
+         }
+     
+         p {
+             font-size: 18px;
+             margin-bottom: 10px;
+         }
+     
+         /* Option styles */
+         .options label {
+             display: block;
+             font-size: 16px;
+             margin-bottom: 10px;
+         }
+     
+         .options input[type="radio"] {
+             margin-right: 5px;
+         }
+     
+         /* Submit button styles */
+         .submit-button {
+             background-color: #007bff;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             cursor: pointer;
+             font-size: 18px;
+             margin-top: 20px;
+         }
+     
+         .submit-button:hover {
+             background-color: #0056b3;
+         }
+ 
+         /* Media Query for Mobile Devices */
+         @media (max-width: 768px) {
+             .quiz-container {
+                 padding: 10px;
+             }
+ 
+              .submit-button {
+                 width: 100%;
+             }
+         }   
+          
+     </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Counselling MCQs</h1>
+        <form id="quiz-form">
+            <div class="question">
+                    <p>1. What are your post-12th educational goals? </p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a"> a)  Pursuing a bachelor's degree
+
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> b) Enrolling in a diploma or vocational program
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> c) Entering the workforce directly
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> d) Uncertain at this time
+                    </label>
+                </div>
+            </div>
+           
+            
+            <div class="question">
+                <p>2. What field of study or career path interests you the most at this point? </p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="a"> a) Science and Engineering
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> b) Arts and Humanities
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> c) Business and Commerce
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> d) Healthcare and Medicine
+                    </label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <p>3. How do you prefer to learn and acquire knowledge?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="a"> a) Through classroom lectures and structured courses
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> b) Through hands-on experiences and practical learning
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> c) Through self-paced online courses
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> d) A combination of the above
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. What is your preferred mode of further education?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q4" value="a"> a) Attending a traditional brick-and-mortar institution
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> b) Enrolling in online courses or distance education programs
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> c) Joining a vocational or technical institute
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d"> d) Considering a gap year for self-discovery
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. What factors are most important to you when choosing a college or university? </p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q5" value="a"> a) Location and proximity to home
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> b) Academic reputation and rankings
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> c) Cost and financial aid options
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d"> d) Specific programs and majors offered
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d"> e) Campus culture and extracurricular activities
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. Do you have any specific career goals in mind at this stage?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q6" value="a"> a) Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="b"> b) No
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>7. How do you plan to finance your higher education? </p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q7" value="a"> a) Scholarships and grants
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="b"> b) Student loans
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="c"> c) Part-time employment
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="d"> d) Family support
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="d"> e) Not sure yet
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. Have you considered any alternative education paths, such as apprenticeships or trade schools?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q8" value="a"> a) Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="q8" value="b"> b) No
+                    </label>
+                    
+                </div>
+            </div>
+            <div class="question">
+                <p>9. Are there any specific challenges or concerns you have regarding your post-12th education and career choices?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q9" value="a"> a) Financial constraints
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="b"> b) Lack of clarity about career goals
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="c"> c) Academic preparedness
+                    </label>
+                    <label>
+                        <input type="radio" name="q9" value="d"> d) Personal circumstances
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. How do you envision your career five years from now?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q10" value="a"> a) Well-established in my chosen field
+    
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="b"> b) Still exploring career opportunities
+                    </label>
+                    <label>
+                        <input type="radio" name="q10" value="c"> c) No specific plans
+                    </label>
+                    
+                </div>
+            </div>
+        
+        
+        
+            
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("quiz-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // You can add JavaScript logic here to calculate the score and display results.
+            // For this simple example, let's just display an alert with the selected options.
+
+            const formData = new FormData(e.target);
+            let result = "Your answers:\n";
+
+            for (const entry of formData.entries()) {
+                result += `Question ${entry[0]}: ${entry[1]}\n`;
+            }
+
+            alert(result);
+        });
+    </script>
+</body>
+</html>

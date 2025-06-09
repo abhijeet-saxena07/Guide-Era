@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Series</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c5f5f5;
+            color:black;
+            padding:  0;
+        }
+
+        nav {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 15vh;
+        }
+
+       .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+
+       .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li a {
+            padding: 2px 10px;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+        
+        .menu li a:hover {
+           color: black;
+           text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #c5f5f5;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .test-series {
+            margin-bottom: 20px;
+        }
+
+        .test-series h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            font-weight: bold; /* Make the text bold */
+             /* Add an underline */
+        }
+        
+
+        .test-series p {
+            font-size: 16px;
+            font-weight: bold; 
+        }
+
+        .start-button {
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .start-button:hover {
+            background-color: #eec50efb;
+        }
+
+        .start-button a {
+        text-decoration: none;
+        color: inherit;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo"><img src="./image/fffff.jpg" alt="GuideEra" height="90"></div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="coun.html"> Counselling</a></li>
+            <li><a href="./x/x.html"> Schemes</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <div class="test-series">
+            <h2>Test Series 1</h2>
+            <p>Test for Class 1</p>
+            <button class="start-button" onclick="startTest('Test Series 1')"><a href="test1.html">Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 2</h2>
+            <p>Test for Class 2.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test2.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 3</h2>
+            <p>Test for Class 3.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test3.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 4</h2>
+            <p>Test for Class 4.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test4.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 5</h2>
+            <p>Test for Class 5.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test5.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 6</h2>
+            <p>Test for Class 6.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test6.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 7</h2>
+            <p>Test for Class 7.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test7.html>Start Test</a></button>
+        </div>
+
+        <div class="test-series">
+            <h2>Test Series 8</h2>
+            <p>Test for Class 8.</p>
+            <button class="start-button" onclick="startTest('Test Series 2')" ><a href=test8.html>Start Test</a></button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript
+        function startTest(testName) {
+            // You can implement logic here to navigate to the selected test.
+           // alert(`Starting ${testName}`);
+        }
+    </script>
+<!-- Add this after your test form -->
+<div id="scoreDisplay" style="display: none;" class="score-container">
+    <h2>Test Results</h2>
+    <p>Your Score: <span id="finalScore">0</span></p>
+</div>
+
+<style>
+.score-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.score-container h2 {
+    color: #2e2e2e;
+    margin-bottom: 15px;
+}
+
+.score-container p {
+    font-size: 20px;
+    color: #4CAF50;
+}
+</style>
+
+<script>
+function showScore(score) {
+    document.getElementById('finalScore').textContent = score;
+    document.getElementById('scoreDisplay').style.display = 'block';
+}
+
+// Add this to your form submit handler
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Calculate score based on correct answers
+    let score = 0;
+    // Add your score calculation logic here
+    showScore(score);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: #c5f5f5;
+    color: #000000;
+    padding:  0;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+   
+}
+
+.menu li a {
+    padding: 2px 10px;
+    color: #2e2e2e;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;}
+
+h2,h1{
+    font-size: 36px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Main content styles */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Volunteer form styles */
+#volunteer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"],
+button#donate-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover,
+button#donate-button:hover {
+    background-color: #2980b9;
+}
+.text-with-outline {
+    font-size: 24px;
+    color: #000000; /* The text color */
+    text-shadow: 
+      -1px -1px 0 #fff,   /* Top-left */
+       1px -1px 0 #fff,   /* Top-right */
+      -1px  1px 0 #fff,   /* Bottom-left */
+       1px  1px 0 #fff;   /* Bottom-right */
+  }
+
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for form headings */
+.form-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+
+/* Style for the submit button */
+
+
+/* Style for form validation messages */
+.validation-message {
+    color: red;
+}
+input[type="submit" i] {
+    background-color: #007bff;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             cursor: pointer;
+             font-size: 18px;
+             margin-top: 20px;
+}

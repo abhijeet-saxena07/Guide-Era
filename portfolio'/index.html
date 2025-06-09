@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: #c5f5f5;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 30px;
+      color: #444;
+    }
+
+    .gallery-container {
+      padding: 20px;
+      max-width: 900px;
+      margin: 20px auto; /* center container */
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      justify-content: center; /* centers grid if last row incomplete */
+    }
+
+    /* Center the 5th image by placing it in a grid column start */
+    .gallery .card:nth-child(5) {
+      grid-column: 1 / span 2; /* span both columns to center */
+      justify-self: center;
+      max-width: 50%; /* optional: make it smaller for better centering */
+      height: 250px;
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 250px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.3);
+    }
+
+    .bottom-paragraph {
+      padding: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: center;
+      max-width: 900px;
+      margin: 20px auto 40px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      .gallery .card:nth-child(5) {
+        grid-column: auto;
+        max-width: 100%;
+      }
+      .card {
+        height: 200px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 90px;
+      }
+
+      .menu li a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+
+  <h2>Empowering Rural Futures</h2>
+
+  <div class="gallery-container">
+    <div class="gallery">
+      <div class="card" style="background-image: url('./images/jaikishan-patel-erauug2J5fM-unsplash.jpg');"></div>
+      <div class="card" style="background-image: url('./images/nikhita-s-NsPDiPFTp4c-unsplash.jpg');"></div>
+    </div>
+  </div>
+
+  <p class="bottom-paragraph">
+    <strong>WE BELIEVE</strong><br><br>
+    Connecting rural to urban, empowering rural communities, education accessibility, skill enhancement, and community collaboration.<br>
+    In a world where the divide between urban and rural areas can seem insurmountable, our mission stands as a beacon of hope and transformation. We are dedicated to breaking down barriers, fostering inclusivity, and empowering communities through innovative education and community development initiatives.<br>
+    Our vision is simple yet profound: to create a world where every individual, regardless of their geographical location, has equal access to education, opportunities, and a promising future. We firmly believe that the synergy of rural and urban communities can lead to unparalleled growth and progress for all.
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <h2>Feedback Form</h2></a></li>
+            <ul>
+                <li><a href="#"></a></li>
+              
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+       
+        <form name="submit-to-google-sheet">
+            <div class="form-group">
+                <label for="name">Teacher's name:</label>
+                <input type="Teacher's name"  name="Teacher's name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Student's Name:</label>
+                <input type="Student's name"  name="Student's name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="Email"  name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="name">School's Name:</label>
+                <input type="School's name"  name="School's name" required>
+            </div>
+                <div class="form-group">
+                    <label for="name">Class Name:</label>
+                    <input type="Class name"  name="Class name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Subject's name:</label>
+                    <input type="Subject's name"  name="Subject's name" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">School's Location:</label>
+                    <input type="School's location"  name="School's location" required>
+                </div>
+            <div class="form-group">
+                <label for="feedback">Feedback:</label>
+                <textarea  name="feedback" rows="5" required></textarea>
+            </div>
+          
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="feedbackSubmitted" style="display: none; text-align: center; margin-top: 20px; font-weight: bold;"></div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxHYm9tr09HQHlwRNQI4YOPj1M9enIT0koyF-KIfCJxpKvZ9zhzRmo1Vqg08ZnT-udh/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const feedbackSubmitted = document.getElementById('feedbackSubmitted'); // Get the feedback submitted message
+
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              if (response.ok) {
+                // Append the feedback submitted message
+                feedbackSubmitted.innerHTML = 'Feedback Submitted!';
+                feedbackSubmitted.style.display = 'block';
+              } else {
+                console.error('Error!', response);
+              }
+            })
+            .catch(error => console.error('Error!', error.message))
+        });
+      </script>
+</body>
+</html>

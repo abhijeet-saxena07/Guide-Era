@@ -1,0 +1,94 @@
+header {
+    background-color: #c5f5f5;
+    color:black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inlin;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+nav h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+nav a:hover {
+    color: #063c76;
+}
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #c5f5f5;
+}
+
+/* Style the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form */
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="Student's name"],
+input[type="School's name"],
+input[type="Class name"],
+input[type="Subject's name"],
+input[type="School's location"],
+input[type="Teacher's name"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

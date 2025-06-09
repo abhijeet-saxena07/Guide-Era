@@ -1,0 +1,13 @@
+nav{
+    color: aqua;
+    align-items: flex-start;
+    justify-content: center;
+    display:flex;
+    background-color: wheat;
+    
+
+
+}
+header{
+    height: 60px;
+}
