@@ -56,6 +56,6 @@ Few Snpashots are :
 
 ![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g4.jpg)
 
-![image alt][(https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g5.jpg)
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/79461a92687e690b7413273abe11fd7f0f655e80/g5.jpg)
 
 ![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g6.jpg)
