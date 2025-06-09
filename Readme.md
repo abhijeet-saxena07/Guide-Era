@@ -47,3 +47,15 @@ Stay updated with the latest announcements, exam schedules, and educational aler
 “Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela
 
 GuideEra aims to be the digital schoolbag for every child — packed with the right materials, structure, and support.
+Few Snpashots are :
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g1.jpg)
+
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g2.jpg)
+
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g3.jpg)
+
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g4.jpg)
+
+![image alt][(https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g5.jpg)
+
+![image alt](https://github.com/abhijeet-saxena07/Guide-Era/blob/0b99ffe2d1458fa7b98f768598e8aa9f739ccfc9/g6.jpg)
