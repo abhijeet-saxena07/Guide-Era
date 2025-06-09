@@ -1,5 +1,6 @@
 📚 GuideEra – Empowering Education for Every Child 🌍
-GuideEra is a one-stop educational platform dedicated to making learning inclusive, effective, and accessible — especially for rural students. With resources ranging from class textbooks to career counseling, GuideEra helps students shape their academic journey with the tools they need to succeed. 🚀
+GuideEra is a one-stop educational platform dedicated to making learning inclusive, effective, and accessible — especially for rural students.
+With resources ranging from class textbooks to career counseling, GuideEra helps students shape their academic journey with the tools they need to succeed. 🚀
 
 🌟 Key Features
 📘 Textbooks Access
@@ -27,10 +28,10 @@ Subject-wise notes, summaries, and preparation kits to help students revise bett
 Personalized guidance to help students choose the right stream, college, and career path.
 
 📊 Performance & Rank Tracking
-Monitor test performance and get ranked among peers to boost motivation and progress.
+Monitor test results and get ranked among peers to boost motivation and growth.
 
 🏛️ Government Schemes
-Information on state and central government scholarships, schemes, and how to apply.
+Information on state and central government scholarships, educational schemes, and application support.
 
 📌 Notice Board
 Stay updated with the latest announcements, exam schedules, and educational alerts.
@@ -46,4 +47,3 @@ Stay updated with the latest announcements, exam schedules, and educational aler
 “Education is the most powerful weapon which you can use to change the world.” – Nelson Mandela
 
 GuideEra aims to be the digital schoolbag for every child — packed with the right materials, structure, and support.
-
